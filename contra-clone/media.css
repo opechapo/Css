@@ -1,0 +1,312 @@
+/* Header and Nav */
+
+@media screen and (max-width: 1280px) {
+  .header{
+    padding: 34px 25px;
+    height: 101px;
+  }  
+  .logo h2{
+    font-size: 22px;
+  }
+} 
+
+
+@media screen and (max-width: 1215px){
+  .figmaCon{
+    overflow-x: auto;
+    padding: 16px 16px 10px 16px;
+    justify-content: space-between;
+  }
+
+  .figmaCon::-webkit-scrollbar{
+    display: none;
+  }
+  
+}
+
+@media screen and (max-width: 1200px){
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card:nth-child(2){
+    order: 4
+  }
+
+  .card:nth-child(3){
+    order: 5
+  }
+  
+  .mt-minus{
+    margin-top: unset;
+  }
+  
+}
+
+
+@media screen and (max-width: 1090px) {
+  .btn{padding: 10px;
+  width: 140px;
+}
+
+.login{
+  width: 80px;
+}
+.mainNav{
+  justify-content: flex-end;
+}
+
+.navBtn > a,
+.navBtn div a:nth-child(2),.mainNavList,
+.btn-mobile-nav ion-icon:nth-child(2){
+  display: none;
+}
+
+.mobileDiv,
+.btn-mobile-nav{
+  display: block;
+}
+.btn-mobile-nav > ion-icon:nth-child(1){
+  font-size: 40px;
+}
+}
+
+@media screen and (max-width: 997px) {
+  .mainHero{
+    width: 100%;
+    padding: 0px 10px;
+  }
+
+  .heroText h1{
+    font-size: 64px;
+  }
+
+  .cardSection > h2{
+    width: 50%;
+    text-align: center;
+    text-wrap: wrap;
+  }
+  .talentWrapperSec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .talentWrapper{
+    width: 70%;
+    background-position: center;
+  }
+  .talentLowWrapper{
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .textContent > p {
+    text-align: center;
+    font-size: 40px;
+    width: 400px;
+  }
+
+  .talentTopWrapper{
+    width: 100%;
+  }
+
+  .textContent > div button {
+    padding: 18px 30px;
+  }
+  .textContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cardWrapper{
+    width: 320px;
+    padding: 5px;
+  }
+
+  /* Text Only */
+
+  .textOnly{
+    margin-top: 88px 0 53px 0;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: 1;
+    width: 100%;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .textOnly > p{
+    width: 80%;
+  }
+
+  /* Button Wrapper */
+
+  .txt{
+    padding: 0;
+  }
+  .txt > button {
+    width: 140px;
+  }
+  /*  Card Row Section */
+
+  .cardRow{
+    flex-direction: column;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cardRow > div{
+    width: 90%;
+  }
+  .cardTwo{
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 50px 0;
+  }
+  .cardTwo > .titleCon > .direction{
+    display: flex;
+  }
+
+  .cardTwo > .imageWrapperOne{
+    margin-top: 0;
+  }
+
+  .title{
+    margin: 0;
+  }
+  .grid{
+    grid-template-columns: 1fr;
+  }
+  .card1{
+    display: none;
+
+  }
+  .action button{
+   
+    /* border: 2px solid; */
+    display: block;
+    margin-top: -50px;
+   border: 1px solid #3d3d3d;
+   border-radius: 30px;
+   padding: 15px 30px;
+  }
+  }
+
+
+@media screen and (max-width: 660px) {
+  .talentWrapper{
+    width: 100%;
+    margin: 0;
+  }
+
+  /* .talentLowWrapper{
+
+  } */
+}
+
+@media screen and (max-width:600px) {
+  .navBtn div a:nth-child(1) {
+    display: none;
+  }
+  
+}
+
+@media screen and (max-width: 460px) {
+  .logo > h2 {
+    display: none;
+  }
+
+  .talentLowWrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .heroText h1{
+   font-size: 32px;
+  }
+
+  .heroText p{
+    font-size: 18px;
+  }
+
+  .cardSection > h2{
+    width: 100%;
+  }
+  .cardSection > p {
+    font-size: 30px;
+    text-wrap: wrap;
+    width: 100%;
+  }
+  .cardWrapper{
+    max-width: 300px;
+  }
+ 
+  /* Text Only Section */
+
+  .textOnly{
+    margin-top: 88px 0 53px 0;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: 1;
+    width: 100%;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .textOnly p{
+    font-size: 32px;
+    width: 100%;
+  }
+
+  .txt > button{
+    width: 80px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .txt{
+    padding: 3px;
+  }
+
+  .action{
+    padding: unset;
+    padding-bottom: 10rem;
+  }
+
+  .wrapper span{
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  .wrapper spanTwo{
+    font-size: 20px;
+  }
+
+  .lower-wrapper{
+    padding: 1em;
+  }
+  .action button{
+    display: block;
+    margin-top: -50px;
+   border: 1px solid #3d3d3d;
+   border-radius: 30px;
+   padding: 15px 30px;
+  }
+}
+
+
+
+
+

@@ -1,0 +1,1017 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant+SC:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Maven+Pro:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+:root {
+  --main-bg-white: #ffffff;
+  --background-two: #d1d1d1;
+  --framer-bg: #2f41ff;
+  --card-bg: #3d3d3d;
+  --font-color: #3d3d3d;
+
+  /* button */
+  --nav-btn-color: #4f4f4f;
+  --nav-btn-bg: #6d6d6d;
+  /* primary btn */
+  --primary-btn-font-size: 18px;
+  --primary-btn-font-weight: 500;
+  --primary-btn-border-radius: 30px;
+  --primary-btn-padding: 10px;
+  --primary-btn-one: #b0b0b0;
+  --primary-btn-one-border: #b0b0b0;
+  --primary-btn-two: #3d3d3d;
+  --primary-btn-two-border: #3d3d3d;
+
+  /* search */
+  --search-bar-btn-bg: #9462ff;
+  --search-bar-btn-border-radius: 50px;
+  --search-bar-btn-border: 1px solid #faff07;
+  --search-bar-btn-text-color: #efefef;
+  --search-bar-btn-text-size: 20px;
+  --search-bar-icon: #374957;
+
+  /* figma btn */
+
+  --padding-figma: 35px 50px;
+  --padding-figma-small: 15px 25px;
+  --border-radius-figma: 10px;
+  --arror-right-color: #374957;
+
+  /* general style */
+  --general-para-size: 20px;
+}
+
+body {
+  background-color: var(--main-bg-white);
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main-bg-white);
+  height: 128px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  padding: 31px 20px 29px 20px;
+  z-index: 1;
+  box-shadow: 0px 1.2rem 3.2rem rgba(0, 0, 0, 0.1);
+  gap: 23px;
+}
+.logo {
+  color: #3d3d3d;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.logo img {
+  width: 170px;
+  height: 50px;
+}
+.logo h2 {
+  font-size: 36px;
+  align-items: center;
+  font-family: "cormorant SC";
+  font-weight: 800;
+}
+.mobileDiv {
+  display: none;
+}
+.mainNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.mainNavList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  gap: 20px;
+  list-style-type: none;
+  color: var(--primary-btn-two);
+  font-size: 18px;
+  font-family: "inter";
+}
+.mainItem a {
+  text-decoration: none;
+  color: var(--primary-btn-two);
+  font-weight: 500;
+  /* text-align: center; */
+}
+.navBtn {
+  display: flex;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  font-size: var(--primary-btn-two);
+}
+.navBtn div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.Btn {
+  padding: 16px;
+  border: 1px solid var(--nav-btn-color);
+  border-radius: 5px;
+  font-family: "inter";
+  text-align: center;
+  color: var(--nav-btn-color);
+  width: 150px;
+  font-size: 16px;
+}
+.login {
+  width: 80px;
+}
+.hire:hover,
+.login:hover {
+  background-color: #f6f6f6;
+}
+.hire:active,
+.login:active {
+  background-color: #e7e7e7;
+}
+.signUp {
+  border: none;
+  background-color: var(--nav-btn-bg);
+  color: #efefef;
+}
+.signUp:hover {
+  background-color: #5d5d5d;
+}
+.signUp:active {
+  background-color: #4f4f4f;
+}
+
+.btn-mobile-nav {
+  cursor: pointer;
+  background: none;
+  border: none;
+  display: none;
+}
+.icon-mobile-nav {
+  width: 4.8rem;
+  height: 4.8rem;
+  color: #000000;
+}
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+/* HERO section */
+
+/* .heroSection{
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} */
+.mainHero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.heroBox {
+  display: flex;
+  align-items: center;
+}
+.heroSection {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainHero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+  /* background-color: black; */
+}
+.heroBox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 84px;
+}
+.heroFels {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.heroFelsOne {
+  font-family: "poppins";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}
+.heroFelsOne span {
+  background: linear-gradient(
+    92deg,
+    rgba(220, 212, 255, 0.7) 37.65%,
+    rgba(166, 133, 255, 0.6) 47.26%,
+    rgba(215, 143, 188, 0.9) 91.43%,
+    rgba(231, 186, 215, 0.7) 105.54%
+  );
+  background-clip: text;
+  color: transparent;
+}
+.heroFelsTwo {
+  color: #888888;
+  font-family: "poppins";
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+}
+.heroText h1 {
+  color: #3d3d3d;
+  text-align: center;
+  font-family: "Cormorant SC";
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+}
+.heroText p {
+  color: #888888;
+  text-align: center;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Cormorant Garamond";
+  margin-bottom: 30px;
+}
+#checkboxInput {
+  display: none;
+}
+.toggleSwitch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 70px;
+  height: 30px;
+  background-color: rgba(199, 199, 199);
+  cursor: pointer;
+  border-radius: 20px;
+}
+.toggleSwitch::after {
+  content: "";
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  left: 0px;
+  right: 0px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: 0.5s;
+  box-shadow: 5px 2px 7px rgba(8, 8, 8, 0.308);
+}
+
+/* Switch the background color */
+#checkboxInput:checked + .toggleSwitch {
+  background-color: #000;
+  transition-duration: 0.3s;
+}
+/* To move the toggle */
+#checkboxInput:checked + .toggleSwitch::after {
+  transform: translate(100%);
+  transition-duration: 0.3s;
+}
+.heroInp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Background that serves as the shadow */
+
+.inputCon {
+  padding: 5px;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgba(250, 255, 7, 0.2),
+    rgba(200, 100, 162, 0.2),
+    rgba(250, 130, 111, 0.2),
+    rgba(220, 212, 255, 0.2),
+    rgba(166, 133, 255, 0.2),
+    rgba(166, 133, 255, 0.2)
+  );
+  border-radius: 50px;
+  content: "";
+}
+.inputCon > div {
+  background-image: linear-gradient(
+    to right,
+    rgba(232, 93, 4, 0.6),
+    rgba(143, 55, 105, 0.6),
+    rgba(154, 39, 22, 0.6),
+    rgba(155, 139, 232, 0.6),
+    rgba(82, 13, 147, 0.6),
+    rgba(60, 9, 108, 0.6)
+  );
+  border-radius: 50px;
+  padding: 1px;
+  width: 100%;
+}
+.searchInp {
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  background-color: var(--main-bg-white);
+  padding: 5px;
+  color: #b0b0b0;
+}
+
+.searchInp > form {
+  flex-basis: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchInp input,
+button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  padding: 5px 20px;
+  font-size: 18px;
+  color: #757573;
+}
+
+.searchInp input {
+  width: 100%;
+  font-size: small;
+}
+.searchInp input::placeholder {
+  color: #b0b0b0;
+}
+.searchInp .submit {
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.searchInp .getBtn {
+  width: 195px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background-color: #9462ff;
+  cursor: pointer;
+  color: white;
+}
+
+.heroBt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 90px;
+  flex-wrap: wrap;
+}
+
+.heroBt > button {
+  font-size: small;
+  border: #b0b0b0 1px solid;
+  border-radius: 50px;
+  color: #b0b0b0;
+  cursor: pointer;
+}
+
+.heroBt > button:hover {
+  border-color: #484848;
+}
+.heroBt > #pop {
+  border: none;
+}
+
+.experts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 120px;
+}
+.experts p {
+  text-align: center;
+  text-transform: uppercase;
+  color: #3d3d3d;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 16px;
+}
+.figmaCon {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  gap: 20px;
+}
+
+.figma {
+  border: 2px solid #b0b0b0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px 30px;
+  border-radius: var(--border-radius-figma);
+}
+
+.figma img {
+  height: 40px;
+  width: 30px;
+}
+
+.figma p {
+  font-family: "Maven Pro";
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.figma span {
+  font-weight: 800;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cardSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 180px;
+  flex-direction: column;
+}
+
+.cardSection > h2 {
+  font-size: 50px;
+  font-family: "inter";
+  font-weight: 500;
+  color: #3d3d3d;
+
+}
+.cardSection > h2 > span{
+  font-family: "Cormorant Garamond";
+
+}
+
+.cardSection > div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-bottom: 8rem;
+
+}
+
+.cardSection > div > div{
+  width: 250px;
+  height: 325px;
+  background-color: #fff;
+  padding-top: 40px;
+  padding-left: 16px;
+  /* border: 2px solid black; */
+  font-family: "Cormorant SC";
+  font-size: 30px;
+  font-weight: 700;
+  transition: all 1s ease-in;
+  border-radius: 10px;
+}
+
+.cardSection > div > .brand{
+  background-color: #45192f;
+  color: #efefef;
+  background-image: url(images/pallet.png);
+  background-size: 100%;
+  background-position: -30px bottom;
+  background-repeat: no-repeat;
+}
+
+.cardSection > div > .brand:hover{
+  background-size: 110%;
+  /* transition: all 3s ease-in; */
+}
+.cardSection > div > .web{
+  background: #fa826f url(images/web\ dev.png) no-repeat;
+  color: #3d3d3d;
+  /* background-image: url(images/web\ dev.png); */
+  background-size: 60%;
+  background-position: 0 bottom;
+  /* background-repeat: no-repeat; */
+}
+
+.cardSection > div > .web:hover{
+  background-size: 70%;
+}
+
+.cardSection > div > .video{
+  background: #7c30f7 url(images/mic.png) no-repeat;
+  background-position: 25px;
+  background-size: 90%;
+  color: #efefef;
+}
+.cardSection > div > .video:hover{
+  background-size: 100%;
+
+}
+
+.cardSection > div > .social{
+  background: #f1ff43 url(images/social\ content\ tiktok.png) no-repeat;
+  background-position: 60px bottom;
+  background-size:70%;
+  color: #3d3d3d;
+
+}
+
+.cardSection > div > .social:hover{
+  background-size: 90%;
+}
+.cardSection > div > .digital{
+  background: #77ba4b url(images/social\ content\ 2.png) no-repeat;
+  background-size: 55%;
+  background-position: 0 bottom;
+  color: #3d3d3d;
+
+}
+.cardSection > div > .digital:hover{
+  background-size: 70%;
+}
+
+.talentWrapper{
+  background: linear-gradient(116deg, rgba(0, 0, 0, 0.2)29.24%, rgba(0,0,0,0) 55.02%), url(images/fine\ girls.png);
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 6rem 0;
+  padding: 3rem 4.5rem;
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 200px;
+  align-items: flex-start;
+  border-radius: 50px;
+}
+
+/* .talenToptWrapper{
+  background-color: blue;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 323px;
+} */
+
+.textContent{
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.textContent > p {
+  color: #efefef;
+  font-size: 80px;
+  font-weight: 700;
+  font-family: "Maven Pro";
+}
+
+.textContent > p span{
+  font-family: "Cormorant Garamond";
+  font-weight: lighter;
+}
+.textContent > div {
+  padding: 0 20px;
+  background-color: #9462ff;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.textContent > div button{
+  cursor: pointer;
+  color: #EFEFEF;
+  font-size: 18px;
+  font-weight: 500px;
+}
+.textContent > div:hover{
+  background-color: #804bf2;
+  transition-duration: 600ms;
+}
+
+.talentLowWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 3rem;
+}
+
+.cardWrapper{
+  background-color: #efefef;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+}
+.carding{
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  padding: 20px 10px;
+}
+.carding > div .paragraph{
+  color: #3d3d3d;
+  font-size: 30px;
+  font-family: "Maven Pro";
+  font-weight: 500;
+}
+
+.carding > div p span{
+  font-family: "Cormorant Garamond";
+  font-weight: 300;
+  display: block;
+}
+.carding > p{
+  font-size: 16px;
+  color: #3d3d3d;
+  font-family: "Maven Pro";
+  font-weight: 400;
+
+}
+
+.textOnly{
+  margin-top: 3rem 0;
+  text-align: center;
+  font-size: 65px;
+  font-weight: 600;
+  font-family: "poppins";
+  padding: 0 3rem;
+  color: #3d3d3d;
+  line-height: 1;
+}
+.textOnly p span{
+  font-weight: 700;
+  font-family: "Cormorant Garamond";
+}
+/* Wrapper btn */
+
+.btnWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+  padding: 0 10rem;
+}
+.btnWrapper button{
+  border: 1px solid #3d3d3d;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  color: #3d3d3d;
+  padding-inline: 31px;
+}
+
+.txt button:hover{
+  background-color: #d1eeee;
+  transition-duration: 600ms;
+}
+
+.txt button{
+  background-color: transparent;
+}
+
+.cardRow{
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 64px;
+  margin-bottom: 6rem;
+}
+
+.cardOne{
+  padding: 40px 30px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #efefef;
+  border-radius: 25px;
+  flex: 0.35;
+}
+
+.cardOne > div{
+  width: 100%;
+}
+
+.cardOne > h4{
+  width: 100%;
+  font-weight: 700;
+  font-family: "poppins";
+  font-size: 30px;
+  color: #3d3d3d;
+  text-wrap: wrap;
+}
+
+.cardOne > h4 > span{
+  font-family: "Comorant Garmond";
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.cardOne > div > p{
+  width: 100%;
+  font-size: 15px;
+  font-family: "Maven Pro";
+}
+.cardOne > .btnBox > button {
+  padding: 10px 15px;
+  background-color: #9462ff;
+  color: #efefef;
+  border-radius: 50px;
+  font-family: "inter";
+  font-size: 16px;
+
+}
+
+.cardOne > .btnBox > button:hover{
+  background-color: #9462ffc2;
+}
+
+.cardTwo{
+  background-color: #2f41ff;
+  border-radius: 25px;
+  flex: 0.4;
+  
+}
+
+.cardTwo > .titleCon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.title{
+  color: #efefef;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 600;
+  font-family: "poppins";
+}
+
+h6{
+  text-align: center;
+  margin-top: 144px;
+}
+
+.cardTwo > .titleCon > .direction{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #efefef;
+  display: none;
+  gap: 1rem;
+}
+
+.cardTwo > .titleCon > .direction > p{
+  text-align: center;
+  color: #efefef;
+  margin: 0;
+  font-family: "poppins";
+}
+
+.cardTwo > .imageWrapperOne{
+  margin-top: 115px;
+  /* width: 65px; */
+  display: flex;
+  padding: 0 0 30px 30px;
+
+}
+
+.cardTwo > .imageWrapperOne > img:nth-child(2),
+.cardTwo > .imageWrapperOne > img:nth-child(3){
+  margin-left: -20px;
+}
+
+.action{
+  background-color: var(--background-two);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 208px;
+}
+
+.wrapper{
+  margin-top: 109px;
+}
+
+.wrapper span{
+  color: var(--font-color);
+  font-size: 30px;
+  font-family: "poppins";
+  font-weight: 600;
+}
+
+.wrapper .spanTwo{
+  font-size: 24px;
+  font-family: "Cormorant Garamond";
+  font-weight: 700;
+
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  padding: 0px 2.5rem 199px 2.5rem;
+  margin-top: -150px;
+}
+
+.card{
+  flex-direction: column;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.inner-card{
+  padding: 31px;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  justify-content: center;
+  display: inline-flex;
+  text-align: center;
+}
+
+.inner-card div p:nth-child(1){
+  font-size: 26px;
+  font-family: "poppins";
+  font-weight: 500;
+}
+
+.inner-card div p:nth-child(2){
+  font-size: 24px;
+  font-family: "Cormorant Garamond";
+  font-weight: 500;
+}
+
+.one{
+  background-color: #7c30f7;
+  color: #efefef;
+}
+.two{
+  background-color: #000000;
+  color: #efefef;
+}
+.three{
+  background-color: #ece8ff;
+}
+
+.lower-wrapper{
+  background-color: white;
+  border-radius: 0 0 20px 20px;
+  padding: 3em;
+}
+.lower-wrapper > div{
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.lower-wrapper .image-wrapper{
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+  padding-bottom: 1.2rem;
+}
+
+.lower-wrapper .image-wrapper img{
+  width: 75px;
+  height: 75px;
+  border: 1px solid black;
+  border-radius: 9999px;
+}
+
+.lower-wrapper .image-wrapper img:nth-child(2){
+  margin-left: -12px;
+}
+.lower-wrapper .title p:nth-child(1){
+  color: var(--font-color);
+  font-size: 18px;
+  font-family: "poppins";
+  font-weight: 600;
+}
+.lower-wrapper .title p:nth-child(2){
+  color: var(--font-color);
+  font-size: 18px;
+  font-family: "Cormorant Garamond";
+  font-weight: 700;
+}
+
+.lower-wrapper .content{
+  color: var(--font-color);
+  font-size: 16px;
+  font-family: "Maven Pro";
+  font-weight: 400;
+}
+
+.mt-minus{
+  margin-top: -3.5em;
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  background: #ffffff url(images/Frame\ 91.png) no-repeat;
+  background-position: bottom right;
+  background-size: 40%;
+  padding: 0;
+}
+
+footer > .footerWrapper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 84px 63px;
+  gap: 40px;
+
+}
+footer > .footerWrapper > div{
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+  flex-direction: column;
+  gap: 32px;
+}
+
+footer > .footerWrapper > div > h6{
+  text-align: left;
+  margin: 0;
+  font-family: "MOntserrat";
+  font-weight: 500;
+  font-size: 18px;
+  color: #6d6d6d;
+}
+
+footer > .footerWrapper > div > ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  /* color: #3d3d3d; */
+}
+
+footer > .footerWrapper > div > ul > li > a{
+  color: #3d3d3d;
+  font-family: "Maven Pro";
+  font-weight: 700;
+  font-size: 20px;
+}
+.action button{
+  display: none;
+  /* margin-bottom: 50px; */
+  
+}

@@ -1,0 +1,102 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: poppins, sans-serif;
+  box-sizing: border-box;
+}
+/* 
+.container{
+  background-image: url(images/adventure.webp);
+  width: 70vw;
+  height: 70vh;
+  background-position: center; */
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.background{
+  background-image: url(images/amen\ ra.jpg);
+  padding: 50rem;
+  background-repeat: no-repeat;
+  background-position: center; */
+  /* width: 30vw;
+  height: 30vh; */
+  /* border: solid red; */
+/* /* 
+} */
+.img{
+  background-image: url(images/1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 90px;
+  margin-bottom: 40px;
+  margin-right: 30px;
+  border: solid;
+  width: fit-content;
+  border-radius: 110px;
+  margin-left: 108px;
+   */
+
+}
+.number{
+  display: grid;
+  gap: 70px;
+  background-color: blueviolet;
+  padding-right: 100px;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  /* border: solid; */
+  /* margin-left: 90px; */
+  grid-template-columns: repeat(3,2fr);
+  
+  
+}
+.name{
+  margin-left: 70px;
+  margin-bottom: 60px;
+  /* margin-top: 100px; */
+}
+.footer{
+  /* margin-bottom: 100px; */
+  margin-left: 50px;
+  font-size: large;
+  border: 5px solid white;
+  margin-top: 50px;
+  width: fit-content;
+  padding: 20px;
+  margin-left: 125px;
+
+  
+}
+.num1{
+/* display: flex; */
+display: flex;
+flex-direction: column;
+align-items: center;
+/* border: solid; */
+/* font-size: 20px; */
+justify-content: center;
+/* padding: 10px; */
+/* padding-left: 80px; */
+font-size: 30px;
+}
+.num2{
+  display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+font-size: 30px;
+}
+.num3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+
+}

@@ -1,0 +1,230 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-family: "poppins";
+  box-sizing: border-box;
+}
+.body{
+  background-color: brown;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+  
+}
+
+.umbrella{
+  background-color: rgb(224, 234, 239);
+  width: 400px;
+  /* height: 844px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  flex-direction: column;
+  padding: 15px;
+}
+.networkBar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 250px;
+}
+
+.nameBar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 230px;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.nameBar h1{
+  color: #1E1F4B;
+}
+.nameBar p{
+color: #2E3E5C;
+margin-right: 18px;
+}
+.blueBar{
+  position: relative;
+  width: fit-content;
+}
+.blueBar span img{
+  position: absolute;
+  bottom: 60%;
+  left: 0%;
+  z-index: 2;
+  margin-left: 145px;
+  margin-bottom: 50px;
+}
+.blueBar img{
+  position: relative;
+  z-index: 1;
+  display: block;
+}
+.blueBar div{
+  z-index: 3;
+  text-align: center;
+  margin-top: 20px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: white;
+  /* font-weight: lighter; */
+}
+.blueBar p{
+  margin: 10px 0;
+}
+
+.portfolioBar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+  margin-top: 10px;
+}
+
+.portfolioBar p{
+  color: #4766F9;
+  /* font-family: "poppins"; */
+  font-size: 12px;
+  cursor: pointer;
+}
+.bitcoin{
+  background-color: #fbfcfc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 40px;
+  width: 162px;
+  height: 120px;
+  gap: 20px;
+}
+.btc{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 30px;
+  font-size: smaller;
+}
+.numbers{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 15px;
+  font-size: smaller;
+}
+.btc p{
+  font-size: 14px;
+  font-weight: bold;
+}
+.btc p span{
+  font-size: 10px;
+  font-weight: lighter;
+  color: #787A8D;
+
+}
+.numbers p:nth-child(2){
+  display: flex;
+  color: #4766F9;
+  align-items: center;
+  gap: 3px;
+}
+.numbers p:nth-child(1){
+  font-weight: bold;
+}
+.numbers p:nth-child(2) ion-icon{
+  font-size: 7px;
+}
+
+.ethereum{
+  background-color: #fbfcfc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 40px;
+  width: 162px;
+  height: 120px;
+  gap: 20px;
+}
+.eth{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 30px;
+  font-size: smaller;
+}
+.eth p{
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.eth p span{
+  font-size: 10px;
+  font-weight: lighter;
+  color: #787A8D;
+
+}
+.middleClass{
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+.last{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 240px;
+  /* gap: 200px; */
+  /* margin-top: 10px; */
+}
+
+.usdt{
+  background-color: #fbfcfc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 20px;
+  padding: 7px;
+  width: 342px;
+  height: 72px;
+  gap: 35px;
+  margin-top: 15px;
+
+}
+
+.usdt div:nth-child(1){
+
+}
+
+.bnb{
+  background-color: #fbfcfc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 20px;
+  padding: 7px;
+  width: 342px;
+  height: 72px;
+  gap: 25px;
+  margin-top: 15px;
+}

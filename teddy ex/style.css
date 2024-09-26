@@ -1,0 +1,259 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  /* border: none; */
+  font-family: "poppins";
+  box-sizing: border-box;
+}
+.mainBody{
+  background-color: #FED5E9;
+  width: 400px;
+  /* height:700px ; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background-position: center; */
+  /* background-size: cover; */
+  /* padding: 70px; */
+  border-radius: 20px;
+  /* border: 1px solid black; */
+  
+}
+.body{
+  background-color: black;
+  /* background-size: cover; */
+  /* background-position: center; */
+  /* width: 430px; */
+  /* height: 700px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 140px;
+  padding: 50px;
+}
+
+.networkBar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-bottom: 100px; */
+  gap: 200px;
+  padding: 20px;
+}
+.optionBar{
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.ion{
+color: black;
+width: 30px;
+height: 40px;
+}
+.emoji{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-bottom: 200px; */
+  gap: 200px;
+  padding: 10px;
+}
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  flex-direction: column;
+  gap: 30px;
+  padding: 10px;
+}
+.inputCon{
+  padding: 5px;
+  width: 100%;
+  border-radius: 50px;
+  border: 1px solid white;
+}
+
+.searchInp{
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  /* color:#FED5E9; */
+  padding: 5px;
+  background-color: #F4CACA;
+}
+
+.searchInp > form{
+flex-basis: 80%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.searchInp input
+button{
+  background: transparent;
+  border: 0;
+  outline: none;
+  padding: 5px 20px;
+}
+
+.img{
+  background:url(images/WhatsApp\ Image\ 2024-08-23\ at\ 12.39.31_f6416ff0.jpg) ;
+  background-size: 100%;
+  padding: 60px 140px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  /* background-position: center; */
+}
+
+.imgSon{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  color: white;
+  font-size: 12px;
+  /* margin-right: 50px; */
+  /* margin-bottom: 50px; */
+}
+.recent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px;
+  padding: 10px;
+  margin-top: 20px;
+}
+.chiLong{
+  border: 1px solid white;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 20px;
+  background-color: #F4CACA;
+  /* justify-content: space-between; */
+}
+
+.chiLongImg{
+  margin-right: 30px;
+}
+
+.vanQ{
+  border: 1px solid white;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  flex-direction: row;
+  border-radius: 20px;
+  background-color: #F4CACA;
+}
+
+.vanQimg{
+  margin-right: 30px;
+
+}
+.sonLe{
+  border: 1px solid white;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 20px;
+  background-color: #F4CACA;
+  background-repeat: no-repeat;
+  /* justify-content: space-between; */
+}
+.sonImg{
+  margin-right: 30px;
+}
+.lowerTab{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap:19px;
+  margin-bottom: 109px;
+}
+
+.vanQIon{
+  background-color: #E7DCDC;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-left: 100px;
+}
+/* .vanQ h3,
+.vanQ p {
+  margin: 0;
+} */
+
+.chiLongIon{
+  background-color: #E7DCDC;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-left: 100px;
+}
+
+.sonLeIon{
+  background-color: #E7DCDC;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-left: 100px;
+
+}
+
+.vanOption{
+  font-size: 15px;
+  color: #C0AAAA;
+}
+.vanOption h3 span{
+  color: black;
+}
+
+.chibody{
+  font-size: 15px;
+  color: #C0AAAA;
+}
+
+
+.chibody h3 span{
+  color: black;
+}
+
+.sonOption{
+  font-size: 15px;
+  color: #C0AAAA;
+}
+
+.sonOption h3 span{
+  color: black;
+  
+}

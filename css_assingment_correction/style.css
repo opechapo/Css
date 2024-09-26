@@ -1,0 +1,80 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+body{
+  background-image: url(images/background.avif);
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.section1 img{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  background-image: url(images/card.avif);
+  background-size: cover;
+  background-position: center;
+  width: 500px;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.section1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+  margin-bottom: 140px;
+}
+.section2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+}
+.footer{
+  padding:10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* width: 90px; */
+  /* height: 80px; */
+  /* size: 50px; */
+  /* color: transparent; */
+}
+.footer button{
+  background-color: transparent;
+  padding: 30px;
+
+  
+}
+.section2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: blueviolet;
+  padding: 30px;
+}
+.section2 .middleman{
+  background-color: rgba(13, 9, 17, 0.593);
+  border: 2px solid white;
+}
